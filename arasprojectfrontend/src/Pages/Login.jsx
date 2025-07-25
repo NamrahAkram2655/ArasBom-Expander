@@ -99,17 +99,10 @@ export const Login = () => {
           <div className="relative z-10 flex flex-col items-center text-center">
             <div className="bg-white/20 backdrop-blur-sm rounded-full p-8 mb-4">
               <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center">
-                <svg
-                  className="w-16 h-16 text-yellow-500"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M12 2L2 12h3v8h14v-8h3L12 2zm0 15c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z" />
-                </svg>
+                <img src="xavor-2.png" alt="" className="w-16 h-16" />
+                
               </div>
             </div>
-            <h2 className="text-white text-2xl font-bold mb-2">XAVOR</h2>
-            <p className="text-white/80 text-sm">Your Digital Partner</p>
           </div>
         </div>
 
@@ -117,10 +110,10 @@ export const Login = () => {
           <div className="max-w-sm mx-auto w-full">
             <div className="text-center mb-8">
               <h1 className="text-3xl font-bold text-gray-800 mb-2">
-                Members Log in
+                LogIn To Your Aras 
               </h1>
               <p className="text-gray-600 text-sm">
-                Welcome back! Please login to your account.
+                Welcome back! login to your Aras account.
               </p>
             </div>
 
@@ -129,7 +122,7 @@ export const Login = () => {
                 <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
                 <input
                   type="text"
-                  name="username" // Changed name attribute to 'username'
+                  name="username" 
                   placeholder="Username"
                   value={formData.username}
                   onChange={handleInputChange}

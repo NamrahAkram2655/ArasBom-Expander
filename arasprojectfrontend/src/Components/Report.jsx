@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
-import { Search, X } from "lucide-react";
+import { Search, X, ChevronRight, ChevronLeft } from "lucide-react";
 import DummyWorkflow from "./DummyWorkflow";
 import Papa from "papaparse";
 
@@ -13,6 +13,9 @@ const Report = () => {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const [sortConfig, setSortConfig] = useState({ key: null, direction: "asc" });
+
+  const [currentPage, setCurrentPage] = useState(1);
+  const rowsPerPage = 9;
 
   const columns = [
     { accessorKey: "level", header: "Level" },
@@ -54,20 +57,17 @@ const Report = () => {
     }
 
     try {
-      const response = await fetch(
-        `${import.meta.env.VITE_API_BASE_URL}/api/bom`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${sessionId}`,
-          },
-          body: JSON.stringify({
-            partNumber,
-            level: parseInt(level),
-          }),
-        }
-      );
+      const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/bom`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${sessionId}`,
+        },
+        body: JSON.stringify({
+          partNumber,
+          level: parseInt(level),
+        }),
+      });
 
       if (!response.ok) {
         const errorRes = await response.json();
@@ -76,8 +76,7 @@ const Report = () => {
 
       const result = await response.json();
 
-      if (!Array.isArray(result))
-        throw new Error("Unexpected response format.");
+      if (!Array.isArray(result)) throw new Error("Unexpected response format.");
 
       const formatted = result.map((item) => ({
         level: item.level ?? "",
@@ -90,6 +89,7 @@ const Report = () => {
       }));
 
       setData(formatted);
+      setCurrentPage(1); 
     } catch (err) {
       setError(err.message || "Something went wrong while fetching data.");
     } finally {
@@ -141,6 +141,20 @@ const Report = () => {
       key,
       direction: prev.key === key && prev.direction === "asc" ? "desc" : "asc",
     }));
+  };
+
+  const totalPages = Math.ceil(sortedData.length / rowsPerPage);
+  const currentPageData = sortedData.slice(
+    (currentPage - 1) * rowsPerPage,
+    currentPage * rowsPerPage
+  );
+
+  const handleNext = () => {
+    if (currentPage < totalPages) setCurrentPage((prev) => prev + 1);
+  };
+
+  const handlePrev = () => {
+    if (currentPage > 1) setCurrentPage((prev) => prev - 1);
   };
 
   return (
@@ -203,9 +217,7 @@ const Report = () => {
                       className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-yellow-500"
                     />
                     {error && (
-                      <p className="text-red-500 text-sm text-center">
-                        {error}
-                      </p>
+                      <p className="text-red-500 text-sm text-center">{error}</p>
                     )}
                     <button
                       onClick={async () => {
@@ -227,7 +239,6 @@ const Report = () => {
         </div>
 
         {error && <div className="text-red-500 mb-2 text-center">{error}</div>}
-
         {loading && (
           <div className="text-center mb-2">
             <p className="text-gray-600">Loading BOM data...</p>
@@ -265,8 +276,8 @@ const Report = () => {
               </tr>
             </thead>
             <tbody>
-              {sortedData.length > 0 ? (
-                sortedData.map((row, idx) => (
+              {currentPageData.length > 0 ? (
+                currentPageData.map((row, idx) => (
                   <tr key={idx} className="hover:bg-gray-50">
                     {columns.map((column) => (
                       <td
@@ -291,6 +302,29 @@ const Report = () => {
             </tbody>
           </table>
         </div>
+
+        {/* Pagination */}
+        {data.length > rowsPerPage && (
+          <div className="flex justify-center items-center gap-4 mt-4">
+            <button
+              className="text-gray-600 hover:text-yellow-600"
+              onClick={handlePrev}
+              disabled={currentPage === 1}
+            >
+              <ChevronLeft />
+            </button>
+            <span className="text-gray-700">
+              Page {currentPage} of {totalPages}
+            </span>
+            <button
+              className="text-gray-600 hover:text-yellow-600"
+              onClick={handleNext}
+              disabled={currentPage === totalPages}
+            >
+              <ChevronRight />
+            </button>
+          </div>
+        )}
       </div>
 
       {data.length > 0 && <DummyWorkflow reportData={data} />}
