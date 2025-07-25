@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
-import { ExportToCsv } from "export-to-csv-file";
 import { Search, X } from "lucide-react";
 import DummyWorkflow from "./DummyWorkflow";
+import Papa from "papaparse";
 
 const Report = () => {
   const navigate = useNavigate();
@@ -23,18 +23,6 @@ const Report = () => {
     { accessorKey: "state", header: "State" },
     { accessorKey: "type", header: "Type" },
   ];
-
-  const csvOptions = {
-    filename: "Expanded_BOM_Report",
-    fieldSeparator: ",",
-    quoteStrings: '"',
-    decimalSeparator: ".",
-    showLabels: true,
-    useBom: true,
-    headers: columns.map((c) => c.header),
-  };
-
-  const csvExporter = new ExportToCsv(csvOptions);
 
   useEffect(() => {
     const user = JSON.parse(sessionStorage.getItem("user"));
@@ -110,8 +98,27 @@ const Report = () => {
   };
 
   const handleExport = () => {
-    if (data.length > 0) csvExporter.generateCsv(data);
-    else setError("No data to export!");
+    if (data.length === 0) {
+      setError("No data to export!");
+      return;
+    }
+
+    const csv = Papa.unparse({
+      fields: columns.map((col) => col.header),
+      data: data.map((row) =>
+        columns.map((col) => row[col.accessorKey] ?? "")
+      ),
+    });
+
+    const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+
+    link.href = url;
+    link.setAttribute("download", "Expanded_BOM_Report.csv");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   const sortedData = useMemo(() => {
