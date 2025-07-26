@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useMemo } from "react";
 import { Search, X, ChevronRight, ChevronLeft } from "lucide-react";
+import DummyWorkFlow from "./DummyWorkflow";
 
 const Report = () => {
   // Mock navigation function for demo
@@ -404,6 +405,8 @@ const Report = () => {
           </div>
         )}
       </div>
+
+      <DummyWorkFlow />
     </>
   );
 };
