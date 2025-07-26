@@ -406,7 +406,7 @@ const Report = () => {
         )}
       </div>
 
-      <DummyWorkFlow />
+      <DummyWorkFlow reportData={data}/>
     </>
   );
 };
