@@ -1,0 +1,163 @@
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\appsettings.json
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\ArasProjectBackend.staticwebassets.endpoints.json
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\ArasProjectBackend.exe
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\ArasProjectBackend.deps.json
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\ArasProjectBackend.runtimeconfig.json
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\ArasProjectBackend.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\ArasProjectBackend.pdb
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\ArasProjectBackend.csproj.AssemblyReference.cache
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\ArasProjectBackend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\ArasProjectBackend.AssemblyInfoInputs.cache
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\ArasProjectBackend.AssemblyInfo.cs
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\ArasProjectBackend.csproj.CoreCompileInputs.cache
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\ArasProjectBackend.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\ArasProjectBackend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\scopedcss\bundle\ArasProjectBackend.styles.css
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\ArasProj.427D23C0.Up2Date
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\ArasProjectBackend.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\refint\ArasProjectBackend.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\ArasProjectBackend.pdb
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\ArasProjectBackend.genruntimeconfig.cache
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\ref\ArasProjectBackend.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\Aras.Cryptography.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\Aras.Net.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\IOM.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\Libs.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\Nito.AsyncEx.Context.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\Nito.AsyncEx.Tasks.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\Nito.Disposables.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\System.Data.HashFunction.Core.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\System.Data.HashFunction.Interfaces.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\System.Data.HashFunction.xxHash.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\App.config
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\ArasProjectBackend.dll.config
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\System.Private.ServiceModel.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\System.ServiceModel.Duplex.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\System.ServiceModel.Http.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\System.ServiceModel.NetTcp.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\System.ServiceModel.Primitives.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\System.ServiceModel.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\System.ServiceModel.Security.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\cs\System.Private.ServiceModel.resources.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\de\System.Private.ServiceModel.resources.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\es\System.Private.ServiceModel.resources.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\fr\System.Private.ServiceModel.resources.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\it\System.Private.ServiceModel.resources.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\ja\System.Private.ServiceModel.resources.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\ko\System.Private.ServiceModel.resources.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\pl\System.Private.ServiceModel.resources.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\pt-BR\System.Private.ServiceModel.resources.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\ru\System.Private.ServiceModel.resources.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\tr\System.Private.ServiceModel.resources.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\zh-Hans\System.Private.ServiceModel.resources.dll
+C:\Users\NamrahAkram\Desktop\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\zh-Hant\System.Private.ServiceModel.resources.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\App.config
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\appsettings.json
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\ArasProjectBackend.staticwebassets.endpoints.json
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\ArasProjectBackend.exe
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\ArasProjectBackend.dll.config
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\ArasProjectBackend.deps.json
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\ArasProjectBackend.runtimeconfig.json
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\ArasProjectBackend.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\ArasProjectBackend.pdb
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\System.Private.ServiceModel.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\System.ServiceModel.Duplex.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\System.ServiceModel.Http.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\System.ServiceModel.NetTcp.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\System.ServiceModel.Primitives.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\System.ServiceModel.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\System.ServiceModel.Security.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\cs\System.Private.ServiceModel.resources.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\de\System.Private.ServiceModel.resources.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\es\System.Private.ServiceModel.resources.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\fr\System.Private.ServiceModel.resources.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\it\System.Private.ServiceModel.resources.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\ja\System.Private.ServiceModel.resources.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\ko\System.Private.ServiceModel.resources.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\pl\System.Private.ServiceModel.resources.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\pt-BR\System.Private.ServiceModel.resources.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\ru\System.Private.ServiceModel.resources.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\tr\System.Private.ServiceModel.resources.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\zh-Hans\System.Private.ServiceModel.resources.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\zh-Hant\System.Private.ServiceModel.resources.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\Aras.Cryptography.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\Aras.Net.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\IOM.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\Libs.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\Nito.AsyncEx.Context.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\Nito.AsyncEx.Tasks.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\Nito.Disposables.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\System.Data.HashFunction.Core.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\System.Data.HashFunction.Interfaces.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\System.Data.HashFunction.xxHash.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\ArasProjectBackend.csproj.AssemblyReference.cache
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\ArasProjectBackend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\ArasProjectBackend.AssemblyInfoInputs.cache
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\ArasProjectBackend.AssemblyInfo.cs
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\ArasProjectBackend.csproj.CoreCompileInputs.cache
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\ArasProjectBackend.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\ArasProjectBackend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\scopedcss\bundle\ArasProjectBackend.styles.css
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\ArasProj.427D23C0.Up2Date
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\ArasProjectBackend.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\refint\ArasProjectBackend.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\ArasProjectBackend.pdb
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\ArasProjectBackend.genruntimeconfig.cache
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\ref\ArasProjectBackend.dll
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\obj\Debug\net8.0\ArasProjectBackend.sourcelink.json
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\publish\App.config
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\publish\ArasProjectBackend.dll.config
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\publish\web.config
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\publish\appsettings.Development.json
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\publish\appsettings.json
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\publish\ArasProjectBackend.deps.json
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\publish\ArasProjectBackend.runtimeconfig.json
+C:\Users\NamrahAkram\Desktop\Aras BOM Expander\ArasProjectBackend\ArasProjectBackend\bin\Debug\net8.0\publish\ArasProjectBackend.staticwebassets.endpoints.json

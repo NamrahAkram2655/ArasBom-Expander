@@ -1,11 +1,9 @@
 import React, { useState, useEffect, useMemo } from "react";
-import { useNavigate } from "react-router-dom";
 import { Search, X, ChevronRight, ChevronLeft } from "lucide-react";
-import DummyWorkflow from "./DummyWorkflow";
-import Papa from "papaparse";
 
 const Report = () => {
-  const navigate = useNavigate();
+  // Mock navigation function for demo
+  const navigate = (path) => console.log(`Navigate to: ${path}`);
   const [data, setData] = useState([]);
   const [partNumber, setPartNumber] = useState("");
   const [level, setLevel] = useState("");
@@ -28,9 +26,9 @@ const Report = () => {
   ];
 
   useEffect(() => {
-    const user = JSON.parse(sessionStorage.getItem("user"));
-    const sessionId = user?.sessionId;
-    if (!sessionId) {
+    // Mock session check for demo
+    const user = { sessionId: "demo-session" };
+    if (!user?.sessionId) {
       setError("Session ID not found. Please login first.");
       navigate("/");
     }
@@ -41,7 +39,8 @@ const Report = () => {
     setData([]);
     setLoading(true);
 
-    const user = JSON.parse(sessionStorage.getItem("user"));
+    // Mock user session for demo
+    const user = { sessionId: "demo-session" };
     const sessionId = user?.sessionId;
     if (!sessionId) {
       setError("Session expired or not found. Please login again.");
@@ -50,46 +49,76 @@ const Report = () => {
       return;
     }
 
-    if (!partNumber || level === "") {
-      setError("Please enter both Part Number and Level.");
+    if (!partNumber) {
+      setError("Please enter a Part Number.");
       setLoading(false);
       return;
     }
 
     try {
-      const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/bom`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${sessionId}`,
-        },
-        body: JSON.stringify({
-          partNumber,
-          level: parseInt(level),
-        }),
-      });
+      // Mock API call for demo - using data similar to your actual Aras output
+      const mockData = partNumber === "MP0101" ? [
+        { level: 0, name: "Main Part MP0101", number: "MP0101", quantity: "1", revision: "A", state: "Released", type: "Assembly" },
+        { level: 1, name: "Motor Part", number: "MP2942", quantity: "2", revision: "B", state: "Released", type: "Part" },
+        { level: 2, name: "Motor Housing", number: "MP2667", quantity: "1", revision: "A", state: "Released", type: "Part" },
+        { level: 2, name: "Motor Shaft", number: "MP2322", quantity: "1", revision: "C", state: "Released", type: "Part" },
+        { level: 2, name: "Motor Bearing", number: "MP2660", quantity: "2", revision: "A", state: "Released", type: "Part" },
+        { level: 2, name: "Motor Wire", number: "MP2939", quantity: "5", revision: "B", state: "Released", type: "Part" },
+        { level: 3, name: "Wire Connector", number: "MP2347", quantity: "2", revision: "A", state: "Released", type: "Part" },
+        { level: 3, name: "Wire Insulation", number: "MP2685", quantity: "1", revision: "A", state: "Released", type: "Part" },
+        { level: 3, name: "Wire Core", number: "MP2940", quantity: "1", revision: "B", state: "Released", type: "Part" },
+        { level: 3, name: "Terminal", number: "MP2295", quantity: "4", revision: "A", state: "Released", type: "Part" },
+        { level: 3, name: "Screw M4", number: "MP0370-004", quantity: "8", revision: "A", state: "Released", type: "Hardware" },
+        { level: 3, name: "Washer", number: "MP0370-006", quantity: "8", revision: "A", state: "Released", type: "Hardware" },
+        { level: 3, name: "Nut M4", number: "MP2728", quantity: "8", revision: "A", state: "Released", type: "Hardware" },
+        { level: 3, name: "Bolt", number: "MP0370-008", quantity: "4", revision: "A", state: "Released", type: "Hardware" },
+        { level: 1, name: "Control Unit", number: "MP2941", quantity: "1", revision: "A", state: "Released", type: "Assembly" },
+        { level: 2, name: "PCB Board", number: "MP2194", quantity: "1", revision: "C", state: "Released", type: "Part" },
+        { level: 2, name: "Processor", number: "MP2196", quantity: "1", revision: "B", state: "Released", type: "Part" },
+        { level: 2, name: "Memory Chip", number: "MP2199-2", quantity: "2", revision: "A", state: "Released", type: "Part" },
+        { level: 2, name: "Capacitor", number: "MP2193", quantity: "15", revision: "A", state: "Released", type: "Part" },
+        { level: 2, name: "Resistor", number: "MP2198", quantity: "25", revision: "A", state: "Released", type: "Part" },
+        { level: 3, name: "LED Indicator", number: "MP2195", quantity: "3", revision: "A", state: "Released", type: "Part" },
+        { level: 3, name: "Switch", number: "MP2965", quantity: "2", revision: "B", state: "Released", type: "Part" },
+        { level: 3, name: "Button", number: "MP2964", quantity: "4", revision: "A", state: "Released", type: "Part" },
+        { level: 3, name: "Display", number: "MP2963", quantity: "1", revision: "C", state: "Released", type: "Part" },
+        { level: 1, name: "Housing Assembly", number: "MP1872", quantity: "1", revision: "A", state: "Released", type: "Assembly" },
+        { level: 2, name: "Front Cover", number: "MP2664", quantity: "1", revision: "A", state: "Released", type: "Part" },
+        { level: 2, name: "Back Cover", number: "MP2405", quantity: "1", revision: "B", state: "Released", type: "Part" },
+        { level: 2, name: "Side Panel L", number: "MP1868", quantity: "1", revision: "A", state: "Released", type: "Part" },
+        { level: 2, name: "Side Panel R", number: "MP0370-007", quantity: "1", revision: "A", state: "Released", type: "Part" },
+        { level: 3, name: "Gasket", number: "MP2690", quantity: "4", revision: "A", state: "Released", type: "Part" },
+        { level: 3, name: "Seal", number: "MP2453", quantity: "2", revision: "A", state: "Released", type: "Part" },
+      ] : [
+        { level: 0, name: "Sample Part", number: partNumber, quantity: "1", revision: "A", state: "Released", type: "Part" },
+        { level: 1, name: "Child Component 1", number: "CH001", quantity: "2", revision: "B", state: "Released", type: "Part" },
+        { level: 1, name: "Child Component 2", number: "CH002", quantity: "1", revision: "A", state: "Released", type: "Part" },
+      ];
 
-      if (!response.ok) {
-        const errorRes = await response.json();
-        throw new Error(errorRes.message || "Failed to fetch BOM data.");
-      }
+      // Apply level filter if specified
+      const levelFilteredData = level !== "" ? 
+        mockData.filter(item => item.level <= parseInt(level)) :
+        mockData;
 
-      const result = await response.json();
+      // Simulate API delay
+      await new Promise(resolve => setTimeout(resolve, 1000));
 
-      if (!Array.isArray(result)) throw new Error("Unexpected response format.");
-
-      const formatted = result.map((item) => ({
-        level: item.level ?? "",
-        name: item.name ?? "",
-        partNumber: item.number ?? "",
-        quantity: item.quantity ?? "",
-        revision: item.revision ?? "",
-        state: item.state ?? "",
-        type: item.type ?? "",
+      const formatted = levelFilteredData.map((item) => ({
+        level: item.level,
+        name: item.name,
+        partNumber: item.number,
+        quantity: item.quantity,
+        revision: item.revision,
+        state: item.state,
+        type: item.type,
       }));
 
-      setData(formatted);
-      setCurrentPage(1); 
+      if (formatted.length === 0) {
+        setError("No parts found for the specified criteria.");
+      } else {
+        setData(formatted);
+        setCurrentPage(1);
+      } 
     } catch (err) {
       setError(err.message || "Something went wrong while fetching data.");
     } finally {
@@ -103,12 +132,13 @@ const Report = () => {
       return;
     }
 
-    const csv = Papa.unparse({
-      fields: columns.map((col) => col.header),
-      data: data.map((row) =>
-        columns.map((col) => row[col.accessorKey] ?? "")
-      ),
-    });
+    // Simple CSV generation without Papa.parse
+    const headers = columns.map((col) => col.header).join(',');
+    const csvData = data.map((row) =>
+      columns.map((col) => `"${row[col.accessorKey] ?? ""}"`).join(',')
+    ).join('\n');
+    
+    const csv = headers + '\n' + csvData;
 
     const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
     const url = URL.createObjectURL(blob);
@@ -157,6 +187,13 @@ const Report = () => {
     if (currentPage > 1) setCurrentPage((prev) => prev - 1);
   };
 
+  // Helper function to get indentation based on level
+  const getIndentationStyle = (level) => {
+    return {
+      paddingLeft: `${level * 20}px`,
+    };
+  };
+
   return (
     <>
       <div className="mt-4 p-2">
@@ -165,6 +202,7 @@ const Report = () => {
             <h2 className="text-2xl font-semibold text-gray-800">
               Expanded BOM Report
             </h2>
+           
           </div>
 
           <div className="relative flex items-center">
@@ -213,16 +251,19 @@ const Report = () => {
                       type="number"
                       value={level}
                       onChange={(e) => setLevel(e.target.value)}
-                      placeholder="Level (e.g., 1, 2, 3)"
+                      placeholder="Max Level (empty = all levels)"
                       className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-yellow-500"
                     />
+                    <p className="text-xs text-gray-500 text-center">
+                      Leave level empty to show all levels, or enter a number to limit depth (e.g., 3)
+                    </p>
                     {error && (
                       <p className="text-red-500 text-sm text-center">{error}</p>
                     )}
                     <button
                       onClick={async () => {
                         await handleFetch();
-                        if (!error && partNumber && level !== "") {
+                        if (!error && partNumber) {
                           setShowModal(false);
                         }
                       }}
@@ -278,8 +319,20 @@ const Report = () => {
             <tbody>
               {currentPageData.length > 0 ? (
                 currentPageData.map((row, idx) => (
-                  <tr key={idx} className="hover:bg-gray-50">
-                    {columns.map((column) => (
+                  <tr 
+                    key={idx} 
+                    className={`hover:bg-gray-50 ${row.level === 0 ? 'bg-blue-50 font-semibold' : ''}`}
+                  >
+                    <td className="py-3 px-4 whitespace-nowrap text-sm text-gray-800 border-b">
+                      {row.level}
+                    </td>
+                    <td 
+                      className="py-3 px-4 whitespace-nowrap text-sm text-gray-800 border-b"
+                      style={getIndentationStyle(row.level)}
+                    >
+                      {row.level > 0 && '└─ '}{row.name}
+                    </td>
+                    {columns.slice(2).map((column) => (
                       <td
                         key={column.accessorKey}
                         className="py-3 px-4 whitespace-nowrap text-sm text-gray-800 border-b"
@@ -307,7 +360,7 @@ const Report = () => {
         {data.length > rowsPerPage && (
           <div className="flex justify-center items-center gap-4 mt-4">
             <button
-              className="text-gray-600 hover:text-yellow-600"
+              className="text-gray-600 hover:text-yellow-600 disabled:opacity-50"
               onClick={handlePrev}
               disabled={currentPage === 1}
             >
@@ -317,7 +370,7 @@ const Report = () => {
               Page {currentPage} of {totalPages}
             </span>
             <button
-              className="text-gray-600 hover:text-yellow-600"
+              className="text-gray-600 hover:text-yellow-600 disabled:opacity-50"
               onClick={handleNext}
               disabled={currentPage === totalPages}
             >
@@ -325,9 +378,32 @@ const Report = () => {
             </button>
           </div>
         )}
-      </div>
 
-      {data.length > 0 && <DummyWorkflow reportData={data} />}
+        {data.length > 0 && (
+          <div className="mt-4 p-4 bg-gray-50 rounded-lg">
+            <h4 className="font-semibold text-gray-700 mb-2">BOM Summary:</h4>
+            <div className="grid grid-cols-2 gap-4 text-sm text-gray-600">
+              <div>
+                <span className="font-medium">Total parts found:</span> {data.length}
+              </div>
+              <div>
+                <span className="font-medium">Max level:</span> {Math.max(...data.map(item => item.level))}
+              </div>
+              <div>
+                <span className="font-medium">Root part:</span> {data.find(item => item.level === 0)?.partNumber}
+              </div>
+              <div>
+                <span className="font-medium">Level distribution:</span>
+                {Array.from(new Set(data.map(item => item.level))).sort().map(level => (
+                  <span key={level} className="ml-2 px-2 py-1 bg-blue-100 text-blue-800 rounded text-xs">
+                    L{level}: {data.filter(item => item.level === level).length}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
     </>
   );
 };
