@@ -85,7 +85,7 @@ const Report = () => {
         };
       }
 
-      console.log(`Calling ${endpoint} with:`, requestBody);
+      // console.log(`Calling ${endpoint} with:`, requestBody);
 
       const response = await fetch(endpoint, {
         method: "POST",
@@ -102,8 +102,8 @@ const Report = () => {
       }
 
       const result = await response.json();
-      console.log("API Response:", result);
-      console.log("First item structure:", result[0]);
+      // console.log("API Response:", result);
+      // console.log("First item structure:", result[0]);
 
       if (!Array.isArray(result)) {
         throw new Error("Unexpected response format.");
@@ -114,7 +114,7 @@ const Report = () => {
       if (apiEndpoint === "basic") {
         // Format for basic BOM response
         formatted = result.map((item, index) => {
-          console.log(`Item ${index}:`, item);
+          // console.log(`Item ${index}:`, item);
           return {
             level: item.Level ?? item.level ?? "",
             name: item.Name ?? item.name ?? "",
@@ -128,7 +128,7 @@ const Report = () => {
       } else {
         // Format for relations BOM response
         formatted = result.map((item, index) => {
-          console.log(`Relations Item ${index}:`, item);
+          // console.log(`Relations Item ${index}:`, item);
           return {
             level: item.Level ?? item.level ?? "",
             name: item.PartName ?? item.partName ?? item.name ?? "",
@@ -150,7 +150,7 @@ const Report = () => {
       }
       
     } catch (err) {
-      console.error("Fetch error:", err);
+      // console.error("Fetch error:", err);
       setError(err.message || "Something went wrong while fetching data.");
     } finally {
       setLoading(false);
