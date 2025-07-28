@@ -301,9 +301,9 @@ const Report = () => {
                     {apiEndpoint === "basic" ? (
                       <input
                         type="number"
-                        value={level}
+                        value={1}
                         onChange={(e) => setLevel(e.target.value)}
-                        placeholder="Level (e.g., 1, 2, 3)"
+                        placeholder="Level 1"
                         className="w-full px-3 sm:px-4 py-2 text-sm sm:text-base border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-yellow-500"
                       />
                     ) : (
@@ -329,7 +329,7 @@ const Report = () => {
                         <div className="text-xs text-blue-700">
                           {apiEndpoint === "relations" 
                             ? "Relations mode provides hierarchical BOM data with parent-child relationships. Max 100 items limit."
-                            : "Basic mode requires a specific level and uses recursive expansion."
+                            : "Basic mode"
                           }
                         </div>
                       </div>
