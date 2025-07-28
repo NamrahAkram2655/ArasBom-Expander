@@ -328,7 +328,7 @@ const Report = () => {
                         <AlertCircle className="h-3 w-3 sm:h-4 sm:w-4 text-blue-500 mt-0.5 mr-2 flex-shrink-0" />
                         <div className="text-xs text-blue-700">
                           {apiEndpoint === "relations" 
-                            ? "Relations mode provides hierarchical BOM data with parent-child relationships. Max 100 items limit."
+                            ? "Relations mode provides hierarchical BOM data with parent-child relationships."
                             : "Basic mode"
                           }
                         </div>
