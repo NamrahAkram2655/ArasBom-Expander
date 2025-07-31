@@ -50,6 +50,9 @@ const Navbar = () => {
             <Link to="/use" className="text-gray-600 hover:text-gray-900 font-medium transition-colors text-sm">
               How To Use
             </Link>
+            <Link to="/form" className="text-gray-600 hover:text-gray-900 font-medium transition-colors text-sm">
+              Insert Data
+            </Link>
           </div>
 
           {/* Center logo */}
@@ -109,6 +112,14 @@ const Navbar = () => {
               onClick={() => setIsMobileMenuOpen(false)}
             >
               How To Use
+            </Link>
+           
+            <Link 
+              to="/form" 
+              className="block px-4 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 font-medium transition-colors text-sm rounded-lg mx-2"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Insert Data
             </Link>
             {user && (
               <div className="px-2 pt-2 border-t border-gray-100 mt-2">

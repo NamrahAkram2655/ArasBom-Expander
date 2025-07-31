@@ -1,6 +1,12 @@
 import React, { useState, useEffect, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
-import { Search, X, ChevronRight, ChevronLeft, AlertCircle } from "lucide-react";
+import {
+  Search,
+  X,
+  ChevronRight,
+  ChevronLeft,
+  AlertCircle,
+} from "lucide-react";
 import DummyWorkflow from "./DummyWorkflow";
 import Papa from "papaparse";
 
@@ -27,7 +33,9 @@ const Report = () => {
     { accessorKey: "revision", header: "Revision" },
     { accessorKey: "state", header: "State" },
     { accessorKey: "type", header: "Type" },
-    ...(apiEndpoint === "relations" ? [{ accessorKey: "parentPartNumber", header: "Parent Part" }] : [])
+    ...(apiEndpoint === "relations"
+      ? [{ accessorKey: "parentPartNumber", header: "Parent Part" }]
+      : []),
   ];
 
   useEffect(() => {
@@ -74,14 +82,14 @@ const Report = () => {
         // Basic BOM endpoint
         requestBody = {
           partNumber: partNumber.trim(),
-          level: parseInt(level)
+          level: parseInt(level),
         };
       } else {
         // Relations endpoint
         endpoint += "/relations";
         requestBody = {
           partNumber: partNumber.trim(),
-          maxLevels: maxLevels
+          maxLevels: maxLevels,
         };
       }
 
@@ -137,18 +145,18 @@ const Report = () => {
             revision: item.Revision ?? item.revision ?? item.major_rev ?? "",
             state: item.State ?? item.state ?? "",
             type: item.Type ?? item.type ?? item.classification ?? "",
-            parentPartNumber: item.ParentPartNumber ?? item.parentPartNumber ?? ""
+            parentPartNumber:
+              item.ParentPartNumber ?? item.parentPartNumber ?? "",
           };
         });
       }
 
       setData(formatted);
       setCurrentPage(1);
-      
+
       if (formatted.length === 0) {
         setError("No BOM data found for the given part number.");
       }
-      
     } catch (err) {
       // console.error("Fetch error:", err);
       setError(err.message || "Something went wrong while fetching data.");
@@ -163,8 +171,11 @@ const Report = () => {
       return;
     }
 
-    const exportColumns = columns.filter(col => 
-      apiEndpoint === "basic" || col.accessorKey !== "parentPartNumber" || apiEndpoint === "relations"
+    const exportColumns = columns.filter(
+      (col) =>
+        apiEndpoint === "basic" ||
+        col.accessorKey !== "parentPartNumber" ||
+        apiEndpoint === "relations"
     );
 
     const csv = Papa.unparse({
@@ -179,7 +190,10 @@ const Report = () => {
     const link = document.createElement("a");
 
     link.href = url;
-    link.setAttribute("download", `BOM_Report_${partNumber}_${new Date().toISOString().split('T')[0]}.csv`);
+    link.setAttribute(
+      "download",
+      `BOM_Report_${partNumber}_${new Date().toISOString().split("T")[0]}.csv`
+    );
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -273,7 +287,6 @@ const Report = () => {
                   </h3>
 
                   <div className="space-y-3 sm:space-y-4">
-                    {/* API Endpoint Selection */}
                     <div>
                       <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                         BOM Type
@@ -283,7 +296,9 @@ const Report = () => {
                         onChange={(e) => setApiEndpoint(e.target.value)}
                         className="w-full px-3 sm:px-4 py-2 text-sm sm:text-base border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-yellow-500"
                       >
-                        <option value="relations">Relations (Recommended)</option>
+                        <option value="relations">
+                          Relations (Recommended)
+                        </option>
                         <option value="basic">Basic</option>
                       </select>
                     </div>
@@ -301,9 +316,11 @@ const Report = () => {
                     {apiEndpoint === "basic" ? (
                       <input
                         type="number"
-                        value={1}
-                        onChange={(e) => setLevel(e.target.value)}
+                        value={level}
+                        onChange={(e) => setLevel(1)}
                         placeholder="Level 1"
+                        min="1"
+                        max="1"
                         className="w-full px-3 sm:px-4 py-2 text-sm sm:text-base border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-yellow-500"
                       />
                     ) : (
@@ -316,7 +333,9 @@ const Report = () => {
                           min="1"
                           max="3"
                           value={maxLevels}
-                          onChange={(e) => setMaxLevels(parseInt(e.target.value) || 3)}
+                          onChange={(e) =>
+                            setMaxLevels(parseInt(e.target.value) || 3)
+                          }
                           className="w-full px-3 sm:px-4 py-2 text-sm sm:text-base border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-yellow-500"
                         />
                       </div>
@@ -327,22 +346,27 @@ const Report = () => {
                       <div className="flex items-start">
                         <AlertCircle className="h-3 w-3 sm:h-4 sm:w-4 text-blue-500 mt-0.5 mr-2 flex-shrink-0" />
                         <div className="text-xs text-blue-700">
-                          {apiEndpoint === "relations" 
+                          {apiEndpoint === "relations"
                             ? "Relations mode provides hierarchical BOM data with parent-child relationships."
-                            : "Basic mode"
-                          }
+                            : "Basic mode"}
                         </div>
                       </div>
                     </div>
 
                     {error && (
-                      <p className="text-red-500 text-xs sm:text-sm text-center">{error}</p>
+                      <p className="text-red-500 text-xs sm:text-sm text-center">
+                        {error}
+                      </p>
                     )}
-                    
+
                     <button
                       onClick={async () => {
                         await handleFetch();
-                        if (!error && partNumber && (apiEndpoint === "relations" || level !== "")) {
+                        if (
+                          !error &&
+                          partNumber &&
+                          (apiEndpoint === "relations" || level !== "")
+                        ) {
                           setShowModal(false);
                         }
                       }}
@@ -363,7 +387,7 @@ const Report = () => {
             {error}
           </div>
         )}
-        
+
         {loading && (
           <div className="text-center mb-2">
             <p className="text-gray-600 text-sm">Loading BOM data...</p>
@@ -417,7 +441,10 @@ const Report = () => {
                             {row[column.accessorKey] ?? ""}
                           </span>
                         ) : (
-                          <div className="truncate max-w-[100px] sm:max-w-none" title={row[column.accessorKey] ?? ""}>
+                          <div
+                            className="truncate max-w-[100px] sm:max-w-none"
+                            title={row[column.accessorKey] ?? ""}
+                          >
                             {row[column.accessorKey] ?? ""}
                           </div>
                         )}
@@ -431,10 +458,9 @@ const Report = () => {
                     colSpan={columns.length}
                     className="py-6 sm:py-8 text-center text-gray-500 text-sm"
                   >
-                    {loading 
-                      ? "Loading..." 
-                      : "No BOM data available. Please search for a part."
-                    }
+                    {loading
+                      ? "Loading..."
+                      : "No BOM data available. Please search for a part."}
                   </td>
                 </tr>
               )}
